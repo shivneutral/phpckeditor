@@ -30,7 +30,7 @@ if(isset($_POST['submit'])){
     <head>
         <title>ckeditor</title>
         <script src="ckeditor/ckeditor.js"></script>
-        <script src="ckfinder/ckfinder.js"></script>
+        <script src="ck/ckeditor/ckfinder.js"></script>
     </head>
     <body>
                <form action="#" method="post">
