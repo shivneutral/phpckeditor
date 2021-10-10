@@ -24,15 +24,13 @@ if(isset($_POST['submit'])){
     }
     
 }
-
-
 ?>
-
 
 <html>
     <head>
         <title>ckeditor</title>
         <script src="ckeditor/ckeditor.js"></script>
+        <script src="ckfinder/ckfinder.js"></script>
     </head>
     <body>
                <form action="#" method="post">
@@ -43,11 +41,13 @@ if(isset($_POST['submit'])){
 
                </form>
                <script>
-                   CKEDITOR.replace('ckeditortxt');
+                   var editor=  CKEDITOR.replace('ckeditortxt');
+                   CKFinder.setupCKEditor( editor );
                  //  config.disableNativeSpellChecker=true;
                   // config.scayt_autoStartup = true;
 
                </script>
                
+                
     </body>
 </html>
